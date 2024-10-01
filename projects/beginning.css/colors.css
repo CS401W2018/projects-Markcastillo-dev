@@ -4,17 +4,17 @@ body {
     font-size: 16px; 
 }
 body {
-    background-color: #27576B; 
+    background-color: #144d66; 
 }
 h1, h2 {
     color: #1e90ff; 
 }
 
 p {
-    color: #555555; 
+    color: #c20000; 
 }
 #hero-title {
-    color: #ff4500; 
+    color: #00ffff; 
     font-size: 2em; 
 }
 .highlight {
@@ -22,13 +22,13 @@ p {
     font-weight: bold;
 }
 .special {
-    color: #d2691e; 
+    color: #07c937; 
     font-style: italic;
 }
 .highlight {
-    color: #1e90ff; 
+    color: #178afd; 
 }
 
 .deemphasize {
-    color: #999999; 
+    color: #d80909; 
 }
