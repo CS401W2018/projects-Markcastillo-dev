@@ -2,10 +2,9 @@ body {
     font-family: Arial, sans-serif; 
     color: hwb(120 33% 16%); 
     font-size: 16px; 
-}
-body {
     background-color: #144d66; 
 }
+
 h1, h2 {
     color: #1e90ff; 
 }
@@ -13,20 +12,20 @@ h1, h2 {
 p {
     color: #c20000; 
 }
+
 #hero-title {
     color: #00ffff; 
     font-size: 2em; 
 }
+
 .highlight {
-    color: #32cd32; 
+    color: #178afd; 
     font-weight: bold;
 }
+
 .special {
     color: #07c937; 
     font-style: italic;
-}
-.highlight {
-    color: #178afd; 
 }
 
 .deemphasize {
