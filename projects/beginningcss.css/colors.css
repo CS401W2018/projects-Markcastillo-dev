@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif; 
+    color: hwb(120 33% 16%); 
+    font-size: 16px; 
+}
+body {
+    background-color: #27576B; 
+}
+h1, h2 {
+    color: #1e90ff; 
+}
+
+p {
+    color: #555555; 
+}
+#hero-title {
+    color: #ff4500; 
+    font-size: 2em; 
+}
+.highlight {
+    color: #32cd32; 
+    font-weight: bold;
+}
+.special {
+    color: #d2691e; 
+    font-style: italic;
+}
