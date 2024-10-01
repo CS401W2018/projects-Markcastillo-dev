@@ -25,3 +25,10 @@ p {
     color: #d2691e; 
     font-style: italic;
 }
+.highlight {
+    color: #1e90ff; 
+}
+
+.deemphasize {
+    color: #999999; 
+}
