@@ -1,4 +1,4 @@
-/* General styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,7 +7,7 @@ body {
     color: #333;
 }
 
-/* Header */
+
 header {
     background-color: #00aaff;
     color: white;
@@ -15,7 +15,7 @@ header {
     padding: 20px 0;
 }
 
-/* Navigation */
+
 nav {
     background-color: #0077cc;
 }
@@ -44,22 +44,22 @@ nav ul li a.current {
     border-radius: 5px;
 }
 
-/* Main content */
+
 main {
     padding: 20px;
     background-color: #fff;
 }
 
-/* Custom list */
+
 .custom-list {
-    list-style-image: url('custom-bullet.png'); /* Replace with your bullet image */
+    list-style-image: url('custom-bullet.png'); 
 }
 
 .custom-list li {
     margin: 10px 0;
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     background-color: #0077cc;
@@ -67,7 +67,7 @@ footer {
     padding: 10px 0;
 }
 
-/* Images */
+
 img {
     max-width: 100%;
     height: auto;
@@ -75,7 +75,7 @@ img {
     margin: 20px 0;
 }
 
-/* Backgrounds */
+
 body {
     background-image: url('background-texture.png');
     background-repeat: repeat-x;
@@ -83,11 +83,11 @@ body {
 
 main {
     background-image: url('side-decor.png');
-    background-position: right top;
+    background-position: bottom right;
     background-repeat: no-repeat;
 }
 
-/* Custom fonts and colors */
+
 body {
     font-family: 'Verdana', sans-serif;
     color: #333;
