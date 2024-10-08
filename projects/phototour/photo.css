@@ -1,9 +1,8 @@
 
-body {
+main {
     font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f0f0f0;
-    color: #333;
+    color: white;
+    
 }
 
 
@@ -42,10 +41,6 @@ nav ul li a.current {
 }
 
 
-main {
-    background-color: #fff;
-}
-
 
 .custom-list {
     list-style-image: url('custom-bullet.png'); 
@@ -58,7 +53,7 @@ main {
 
 footer {
     text-align: center;
-    background-color: #0077cc;
+    background-color: green;
     color: white;
 }
 
@@ -70,17 +65,17 @@ footer {
 
 }
 
-
-body {
-    background-image: url('usaflag.jpg');
-    background-repeat: repeat-x;
+.flag{
+    
+    background:url('usaflag.gif') no-repeat;
+    background-size: 300px 150px;
+    background-position: bottom right;
 }
 
-main {
+body {
+    background: url('landscape.jpg');
+    background-size: 300px 250px;
     
-    background-image: url('usaflag.jpg') no-repeat;
-    background-size: 400px 350;
-    background-position: bottom right;
 }
 
 
