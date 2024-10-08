@@ -77,13 +77,14 @@ footer {
 
 
 body {
-    background-image: url('background-texture.png');
+    background-image: url('usaflag.jpg');
     background-repeat: repeat-x;
 }
 
 main {
-    background-image: url('side-decor.png');
-    background-position: bottom right;
+    
+    background-image: url('usaflag.jpg');
+    background-position: top right;
     background-repeat: no-repeat;
 }
 
