@@ -2,13 +2,7 @@ main {
     font-family: Arial, sans-serif;
     color: white;
     
-}
 
-
-header {
-    background-color: #00aaff;
-    color: white;
-    text-align: center;
 }
 
 
@@ -41,10 +35,6 @@ nav ul li a.current {
 
 
 
-.custom-list {
-    list-style-image: url('custom-bullet.png'); 
-}
-
 .custom-list li {
     margin: 10px 0;
 }
@@ -53,13 +43,18 @@ nav ul li a.current {
 footer {
     text-align: center;
     background-color: green;
-    color: white;
+    color: rgb(187, 33, 33);
 }
 
 
 
-.tree.jpg{
-    width: 300px;
-    height: 200px;
+.treepic{
+    width: 400px;
+    height: 350px;
+
+}
+
+p{
+text-decoration-color: black;
 
 }
