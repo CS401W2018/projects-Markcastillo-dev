@@ -1,0 +1,65 @@
+main {
+    font-family: Arial, sans-serif;
+    color: white;
+    
+}
+
+
+header {
+    background-color: #00aaff;
+    color: white;
+    text-align: center;
+}
+
+
+nav {
+    background-color: #0077cc;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:Yellow;
+    font-weight: bold;
+
+}
+
+nav ul li a.current {
+    background-color: #005999;
+    border-radius: 5px;
+}
+
+
+
+.custom-list {
+    list-style-image: url('custom-bullet.png'); 
+}
+
+.custom-list li {
+    margin: 10px 0;
+}
+
+
+footer {
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+
+
+.tree.jpg{
+    width: 300px;
+    height: 200px;
+
+}
