@@ -1,5 +1,5 @@
 body{
-    background-color: darkslategray;
+    background-color: rgb(66, 113, 150);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -41,7 +41,7 @@ header h1{
     
 }
 nav{
-    background-color: lightcoral;
+    background-color: rgb(151, 163, 14);
     text-align: center;
     padding: 5px 0;
     height: 70px;
@@ -51,7 +51,7 @@ nav{
 nav a{
     display: inline-block;
     padding: 10px 5px;
-    background-color: darkcyan;
+    background-color: rgb(46, 84, 8);
     border-bottom: 5px solid darkslategray;
     color: white;
     margin-left: 30px;
@@ -64,7 +64,7 @@ nav a{
     border-style: outset;
 }
 nav a:hover{
-    background-image: url('endgame.jpg');
+    background-image: url('background.jpg');
 }
 .wrapper{
     width: 90%;
@@ -74,7 +74,7 @@ nav a:hover{
 main{
     padding: 20px;
     margin: 10px;
-    background-color: lightcyan;
+    background-color: rgb(102, 155, 202);
     border: 3px solid black;
     border-radius: 10px;
 }
@@ -84,7 +84,7 @@ main h2{
     line-height: 100 px;
 }
 figure{
-    border: thin solid #333;
+    border: thin solid #077c9c;
     width: 400px;
     margin: auto;
     padding: 10px;
@@ -92,7 +92,7 @@ figure{
 }
 figcaption{
     font-style: italic;
-    color: #666;
+    color: #d10000;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: larger;
 }
@@ -129,7 +129,7 @@ nav li{
 }
 
 footer{
-    background: url('avengersheader.jpg') no-repeat center;
+    background: url('background.jpg') no-repeat center;
     color: white;
     padding: 10px 0;
     text-align: center;
