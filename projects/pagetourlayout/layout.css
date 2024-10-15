@@ -5,7 +5,7 @@ body{
     padding: 0;
 }
 header{
-    background-color: lightcyan;
+    background-color: rgb(5, 91, 91);
     color: white;
     padding: 20px 0;
     color: lightskyblue;
@@ -84,7 +84,7 @@ main h2{
     line-height: 100 px;
 }
 figure{
-    border: thin solid #077c9c;
+    border: thin solid #732c2c;
     width: 400px;
     margin: auto;
     padding: 10px;
@@ -108,11 +108,11 @@ figcaption{
 }
 .pic2 img{
     width: 400px;
-    height: 300px;
+    height: 350px;
 }
 
 #pic1 img{
-    width: 400px;
+    width: 390px;
 }
 
 .clear{
