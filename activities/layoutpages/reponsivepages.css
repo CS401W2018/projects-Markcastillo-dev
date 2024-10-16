@@ -17,3 +17,15 @@ body {
 background-color:gray;
 border: thin solid black
 }
+
+.itemA { grid-area: Iside;
+}
+
+.itemB {grid-area:rside
+}
+
+.itemC{
+ grid-area: main;
+}
+
+
