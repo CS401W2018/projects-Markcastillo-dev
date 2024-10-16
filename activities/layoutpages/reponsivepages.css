@@ -1,16 +1,15 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/*This also have CSS Grid & CSS flex */
 .container {
  background-color: blue;
  padding: 5px;   
  display: grid;
- grid-template-columns: 1fr 1fr 1fr;
-
+ grid-template-columns: 1fr 1fr 1fr; 
 }
 
 .item{
 background-color:gray;
-border: thin black
+border: thin solid black
 }
