@@ -7,6 +7,10 @@ body {
  padding: 5px;   
  display: grid;
  grid-template-columns: 1fr 1fr 1fr; 
+ grid-template-areas:
+ "Header header header"
+ "side main side"
+ "footer footer footer";
 }
 
 .item{
