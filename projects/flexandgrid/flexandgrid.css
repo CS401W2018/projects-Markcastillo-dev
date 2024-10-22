@@ -14,11 +14,13 @@ header {
 
 figure {
     border: thin solid black;
-    width:200;
+    width: 200px;
 }
 
 img {
-    width: 200;
+    width: 200px;
+    height: auto;
+    border: thin solid black;
 }
 
 body{
@@ -29,7 +31,7 @@ border: 30px solid rgb(173, 115, 115);
 
 #lovephoto{
     width: 600px;;
-    height: 430;
+    height: 430px;
 }
 
 Nav a {
