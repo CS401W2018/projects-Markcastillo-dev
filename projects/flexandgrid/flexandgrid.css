@@ -1,3 +1,8 @@
-nav a{
-    display: block
+header {
+    background-color: lightblue;
+}
+
+#lovephoto{
+    width: 600px;;
+    height: 430;
 }
