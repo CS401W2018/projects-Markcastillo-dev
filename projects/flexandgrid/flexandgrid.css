@@ -1,8 +1,42 @@
 header {
     background-color: lightblue;
+    text-align: center;
+    margin-top: 50px;
+    margin-right:auto;
+    margin-left:auto;
+    border: 5px solid rgb(171, 117, 117);   
+}
+
+#wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+
+figure {
+    border: thin solid black;
+    width:200;
+}
+
+img {
+    width: 200;
+}
+
+body{
+background-image: url(Flowers.jpg); 
+background-repeat: repeat;
+border: 25px solid rgb(173, 115, 115);
 }
 
 #lovephoto{
     width: 600px;;
     height: 430;
+}
+
+Nav a {
+    color: green;
+    border: rgb(187, 106, 1);
+    background-color: rgb(255, 219, 127);
+}
+.current {
+    color: gray;
 }
