@@ -34,7 +34,7 @@ border: 30px solid rgb(173, 115, 115);
 
 Nav a {
     color: green;
-    border: rgb(187, 106, 1);
+    border: 3px solid rgb(187, 106, 1);
     background-color: rgb(255, 219, 127);
 }
 .current {
