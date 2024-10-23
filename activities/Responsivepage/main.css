@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.byodo {
+    width: 200px;
+    border: thin solid #000;
+    /* overflow: hidden; */
+    box-shadow: 3px 3px 3px;
+    margin: 5px;
+}
+
+nav {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+}
+
+.byodo img {
+    width: 100%;
+}
+
+.row {
+ display:flex;
+ flex-direction: row;
+ justify-content: space-between;
+ /* gap:5px;     */
+
+}

@@ -5,22 +5,23 @@ header {
     margin-right:auto;
     margin-left:auto;
     border: 5px solid rgb(171, 117, 117);   
+    margin-bottom: 50px;
 }
 
 #wrapper {
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 figure {
     border: thin solid black;
-    width: 200px;
+    /* width: 200px; */
 }
 
 img {
-    width: 200px;
-    height: auto;
-    border: thin solid black;
+    margin: 0px;
+    padding: 0px;
 }
 
 body{
@@ -30,8 +31,8 @@ border: 30px solid rgb(173, 115, 115);
 }
 
 #lovephoto{
-    width: 600px;;
-    height: 430px;
+    margin: 0px;
+    padding: 0px;
 }
 
 Nav a {
@@ -41,4 +42,8 @@ Nav a {
 }
 .current {
     color: gray;
+}
+
+.set{
+    border: black solid thin;
 }
