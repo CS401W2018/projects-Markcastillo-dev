@@ -30,7 +30,7 @@ nav {
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 300px){
     body{
         background-color: blueviolet;
     }
