@@ -25,14 +25,35 @@ nav {
  display:flex;
  flex-direction: row;
  justify-content: space-between;
+ flex-wrap: wrap;
  /* gap:5px;     */
 
 }
 
-
-@media screen and (max-width: 100px){
+/* 
+@media screen and (max-width: 800px){
     body{
         background-color: blueviolet;
+    }
+} */
+
+
+@media screen and (max-width: 800px){
+    nav{
+        flex-direction:column;
+    }
+    
+    nav a{
+        border-bottom: thin solid #fff;
+    
+     /* .row{
+        flex-direction: column; 
+        justify-content:center; */
+    }
+
+    .main-card
+    {
+        order: -1;
     }
 }
 
