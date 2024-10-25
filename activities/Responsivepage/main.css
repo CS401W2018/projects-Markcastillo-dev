@@ -12,7 +12,8 @@ body {
 
 nav {
     background-color: antiquewhite;
-    display: flex;
+    /* display: flex; */
+    display: block;
     justify-content: space-around;
 }
 
@@ -26,4 +27,11 @@ nav {
  justify-content: space-between;
  /* gap:5px;     */
 
+}
+
+
+@media screen and (max-width: 800px){
+    body{
+        background-color: blueviolet;
+    }
 }
