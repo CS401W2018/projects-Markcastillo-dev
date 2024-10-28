@@ -2,6 +2,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+header h1{
+    margin: 0;
+}
+
 .byodo {
     width: 200px;
     border: thin solid #000;
@@ -15,6 +19,7 @@ nav {
     display: flex;
     /* display: block; */
     justify-content: space-around;
+
 }
 
 .byodo img {
@@ -44,7 +49,7 @@ nav {
     }
     
     nav a{
-        border-bottom: thin solid #fff;
+        border-bottom:;
     
      /* .row{
         flex-direction: column; 
