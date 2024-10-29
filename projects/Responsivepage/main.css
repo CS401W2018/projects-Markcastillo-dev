@@ -26,6 +26,11 @@ header h1{
     text-align: center;
 }
 
+.title {
+    font-weight:700;
+    margin: auto;
+}
+
 .maincontent img {
     width: 100%;
 }
