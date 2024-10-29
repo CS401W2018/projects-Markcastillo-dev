@@ -4,14 +4,42 @@ body {
 
 header h1{
     margin: 0;
+    background-color: rgb(236, 207, 109);
 }
 
-.byodo {
+.container{
+    display: flex;
+    padding: 10px;
+    flex:wrap;
+}
+
+.sidebar {
+    box-shadow: 10px 10px 10px #ccc;
+    width: 25%;
+    padding: 10px;
+}
+
+.sidebar img {
+    width: 100%;
+}
+.sidebar figure {
+    text-align: center;
+}
+
+.maincontent img {
+    width: 100%;
+}
+.maincontent{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 200px;
     border: thin solid #000;
-    /* overflow: hidden; */
-    box-shadow: 3px 3px 3px;
+    box-shadow: 3px 3px 3px #000;
     margin: 5px;
+    
+
 }
 
 nav {
@@ -22,44 +50,44 @@ nav {
 
 }
 
-.byodo img {
-    width: 100%;
-}
 
-.row {
- display:flex;
- flex-direction: row;
- justify-content: space-between;
- flex-wrap: wrap;
- /* gap:5px;     */
-
-}
-
-/* 
-@media screen and (max-width: 800px){
-    body{
-        background-color: blueviolet;
+@media screen and (max-width: 700px) {
+    header{
+        display: none;
     }
-} */
 
-
-@media screen and (max-width: 800px){
+    footer{
+        display: none;
+    }
+    
     nav{
-        flex-direction:column;
-    }
-    
-    nav a{
-        border-bottom:;
-    
-     /* .row{
-        flex-direction: column; 
-        justify-content:center; */
+        display: none;
     }
 
-    .main-card
-    {
-        order: -1;
+    nav {
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        order: 2;
+    }
+
+    .maincontent {
+        width: 100%;
+    }
+
+    .main-card {
+        width: 100%;
     }
 }
+
+    
+
+    
 
 
