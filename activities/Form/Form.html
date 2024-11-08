@@ -5,47 +5,74 @@
     <title>Tables</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Tables.css">
+    <link rel="stylesheet" href="Form.css">
     
     <header><h1>Class table</h1></header>
 </head>
 <body>
-    <main>
+    <mai>
+        <fieldset>
+            <legend>Sign up</legend>
+        <div>
         <!-- <form action="processing.html" method="get"> -->
             <form action="processing.html" method="post">
-            First Name:  <input type="text" name="first" value="Joe" required="required"><br>
-            Last Name: <input type ="text" name="last" placeholder="Last Name"><br>
-            Password: <input type="password" name="pass"><br>
-            <input type="checkbox" name="Remember" checked> Remember Me <br>
-            Grade: 
-            <input type="radio" value="Freshman"> Freshman <br>
-            <input type="radio" value="Sophomore"> Sophomore <br>
-            <input type="radio" value="Junior"> Junior <br>
-            <input type="radio" value="Senior"> Senior <br>
-            <select name="state" id="state">
-                <option value="Blank"> Hawaii</option>
-                <option value="Hawaii"> Hawaii</option>
-                <option value="California"> California</option>
-                <option value="Utah"> Utah</option>
-                <option value="Colorardo"> Colorardo</option>
-            </select> <br>
-            <textarea name="comment" ids=""></textarea>
-            <input type="submit">
+            <!-- <label>First Name:  <input type="text" name="first" value="Joe" required="required"></label> -->
+            <div class="form-row">
+                <label for="fname">First Name: </label>
+                    <input id="fname" type="text" name="first" placeholder="First Name" required="required">
+            </div>
+            <div class="form-row">
+                Last Name: <input type ="text" name="last" placeholder="Last Name">
+            </div>
+                Password: <input type="password" name="pass">
+            <div class="form-row">
+             <label>
+                <input type="checkbox" name="Remember" checked>
+                Remember Me 
+            </label>
+            </div>
+            <div class="form-row"> 
+                Grade: 
+                <input type="radio" value="Freshman"> Freshman 
+                <input type="radio" value="Sophomore"> Sophomore 
+                <input type="radio" value="Junior"> Junior 
+                <input type="radio" value="Senior"> Senior
+            </div>
 
+            <div class="form-row"> 
+                <select name="state" id="state">
+                    <option value="Blank"> Hawaii</option>
+                    <option value="Hawaii"> Hawaii</option>
+                    <option value="California"> California</option>
+                    <option value="Utah"> Utah</option>
+                    <option value="Colorardo"> Colorardo</option>
+                </select>
+            </div>
+
+            <div class="form-row"> 
+                <div>
+                <textarea name="comment" ids=""></textarea>
+                <input type="submit">
+                </div>
+            </div>
 
         </form>
+        </field>
 
-        <h1>The form tag has an "action" attribute. What does it do?</h1>
-        <p>Action is to perfom when you are trying to submit a form to a server</p>
+        
+        </div>
+        <h2> Engagement: </h2>
+        <p1> What are different ways to style your form?</p1> 
+            <p1> You can use legend, fieldset, flex, and css for style your form</p1>
 
-        <h1>The form tag has a "method" attribute. What does it do?</h1>
-        <p>This helps to send a data to a server </p>
+        <div>
+            
+            <p1> Why does the professor like to use flex?</p1>
+            <p1> Flex allows you to navigate whether you want horizontal, column to organize and be responsive page.</p1>
+        </div>
 
-        <h1> What is the difference between a "POST" and a "GET"?</h1>
-        <p> Post when reading,adding,and changin to the server.
-        when you use GET all the information comes up to the URL</p>
-    
-    </main>
+        </main>
+        
     <footer>
     <p>&copy; Mark Castillo 2024 </p>
     </footer>
