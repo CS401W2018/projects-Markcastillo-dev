@@ -13,9 +13,9 @@ header {
 
 
 main {
-    background-color: white;
+    background-color: rgb(219, 206, 153);
     padding: 2rem;
-    box-shadow: 2 10px 12px rgb(0, 0, 0);
+    box-shadow: 0 10px 12px rgb(0, 0, 0);
     border-radius: 10px;
     
 }
@@ -49,7 +49,7 @@ select, textarea {
     font-size: 1rem;
     background-color: #d69784;
     flex: 1;
-    border: 10x solid #1153e2;
+    border: 5 px solid #03060d;
     border-radius: 5px;   
 }
 
