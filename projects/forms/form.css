@@ -46,11 +46,11 @@ label {
 
 input[type="text"],input[type="email"],input[type="password"],input[type="date"],input[type="tel"],
 select, textarea {
-    padding: 8px;
+    padding: 10px;
     font-size: 1rem;
     background-color: #d69784;
     flex: 1;
-    border: 5 px solid #03060d;
+    border: 8px solid #03060d;
     border-radius: 5px;   
 }
 
