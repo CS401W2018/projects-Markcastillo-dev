@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+ }
+
+ fieldset {
+    box-shadow: 3px 3px 5px rgba(20,20,20,0,5);
+    background-color: aquamarine;
+ }
+ 
+ legend{
+    border: thin solid black;
+    background-color: rgb(74, 117, 38);
+    padding: 10px;
+    color: white;
+}
+
+.form-row {
+    display: flex;
+
+}
+
+.form-row label {
+    width: 150px;
+}
