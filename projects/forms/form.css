@@ -1,24 +1,107 @@
-body {
-    font-family: Arial, Arial, Helvetica, sans-serif;
- }
 
- fieldset {
-    box-shadow: 3px 3px 5px rgba(20,20,20,0,5);
-    background-color: aquamarine;
- }
- 
- legend{
-    border: thin solid black;
-    background-color: rgb(74, 117, 38);
-    padding: 10px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;  
+}
+
+header {
+    background-color: #4CAF50;
     color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+main {
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 2 10px 12px rgb(0, 0, 0);
+    border-radius: 10px;
+    
+}
+
+fieldset {
+    border: 1px solid #6b1111;
+    border-radius: 10px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 10px;
+    color: #4CAF50;
 }
 
 .form-row {
     display: flex;
-
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
-.form-row label {
+label {
     width: 150px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+input[type="text"],input[type="email"],input[type="password"],input[type="date"],input[type="tel"],
+select, textarea {
+    padding: 8px;
+    font-size: 1rem;
+    background-color: #d69784;
+    flex: 1;
+    border: 10x solid #1153e2;
+    border-radius: 5px;   
+}
+
+input[type="text"]:focus,input[type="email"]:focus,input[type="password"]:focus,input[type="date"]:focus,input[type="tel"]:focus,select:focus,
+textarea:focus {
+    background-color: #e0f7e9;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+.form-row label[for="checkbox"],
+.form-row label[for="radio"] {
+    margin-left: 8px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #4CAF50;
+}
+
+
+@media (max-width: 700px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    label {
+        margin-bottom: 5px;
+        width: 100%;
+        display: block;
+    }
+
+
+    input[type="submit"] {
+        padding: 20px;
+        font-size: 1rem;
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: #2cad37;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+
 }

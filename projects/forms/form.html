@@ -4,31 +4,43 @@
     <title>Tables</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Form.css">
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    <header><h1>Class Table</h1></header>
+    <header><h1>Class Project</h1></header>
 
     <main>
         <fieldset>
             <legend>Sign up</legend>
             <form action="processing.html" method="post">
                 <div class="form-row">
-                    <label for="fname">First Name: </label>
-                    <input id="fname" type="text" name="first" placeholder="First Name" required="required">
+                    <label for="fname">First Name:</label>
+                    <input id="fname" type="text" name="first" placeholder="First Name" required>
                 </div>
                 <div class="form-row">
-                    <label for="lname">Last Name: </label>
-                    <input id="lname" type="text" name="last" placeholder="Last Name">
+                    <label for="lname">Last Name:</label>
+                    <input id="lname" type="text" name="last" placeholder="Last Name" required>
                 </div>
                 <div class="form-row">
-                    <label for="pass">Password: </label>
-                    <input id="pass" type="password" name="pass">
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email" placeholder="Email Address" required>
                 </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input id="pass" type="password" name="pass" required>
+                </div>
+                <div class="form-row">
+                    <label for="dob">Date of Birth:</label>
+                    <input id="dob" type="date" name="dob" required>
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone Number:</label>
+                    <input id="phone" type="tel" name="phone" placeholder="Phone Number" required>
+                </div>      
                 <div class="form-row">
                     <label>
                         <input type="checkbox" name="Remember" checked>
-                        Remember Me
+                        Agree to terms
                     </label>
                 </div>
                 <div class="form-row">
@@ -40,7 +52,7 @@
                 </div>
                 <div class="form-row">
                     <label for="state">State:</label>
-                    <select name="state" id="state">
+                    <select name="state" id="state" required>
                         <option value="">Select your state</option>
                         <option value="Hawaii">Hawaii</option>
                         <option value="California">California</option>
