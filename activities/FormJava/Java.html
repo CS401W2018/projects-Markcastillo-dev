@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tables</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Java.css">
+</head>
+<body>
+    <header><h1>Class Project</h1></header>
+
+    <main>
+        <fieldset>
+            <legend>Sign up</legend>
+            <form id="myForm" action="processing.html" method="post">
+                <div class="form-row">
+                    <label for="fname">First Name:</label>
+                    <input id="fname" type="text" name="first" placeholder="First Name" required>
+                </div>
+                <div class="form-row">
+                    <label for="lname">Last Name:</label>
+                    <input id="lname" type="text" name="last" placeholder="Last Name" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input id="pass" type="password" name="pass" required>
+                </div>
+                <div class="form-row">
+                    <label for="dob">Date of Birth:</label>
+                    <input id="dob" type="date" name="dob" required>
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone Number:</label>
+                    <input id="phone" type="tel" name="phone" placeholder="Phone Number" required>
+                </div>      
+                <div class="form-row">
+                    <label>
+                        <input type="checkbox" name="Remember" checked>
+                        Agree to terms
+                    </label>
+                </div>
+                <div class="form-row">
+                    Grade:
+                    <input type="radio" name="grade" value="Freshman"> Freshman
+                    <input type="radio" name="grade" value="Sophomore"> Sophomore
+                    <input type="radio" name="grade" value="Junior"> Junior
+                    <input type="radio" name="grade" value="Senior"> Senior
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state" required>
+                        <option value="">Select your state</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="California">California</option>
+                        <option value="Utah">Utah</option>
+                        <option value="Colorado">Colorado</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="comment">Comments:</label>
+                    <textarea name="comment" id="comment" placeholder="Enter your comments here"></textarea>
+                </div>
+                <div class="form-row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </fieldset>
+
+        <p>What is JavaScript? How did it get its name? Invented 1990 Sun micro systems. JavaScripst is a programming langgauge it is invented to run inside the computer, Microsoft. Java running in the front in the browser.</p> <br>
+    
+        <p>What are the two ways you can run JavaScript?
+            Runs in the Dom (Document Object Model) Or Node JS
+        </p> <br>
+
+        <p>What was the most popular front-end js library? J Query</p><br>
+
+        <p>What is the most popular front-end js library today?
+            React
+        </p><br>
+    </main>
+        
+    <footer>
+        <p>&copy; Mark Castillo 2024</p>
+    </footer>
+    <script>
+        document.getElementById("myForm").addEventListener('submit',function(event) {
+            event.preventDefault();
+            const fname =document.getElementById('fname').value;
+            alert("You submmitted the forms")
+        })
+    </script>
+</body>
+</html>
