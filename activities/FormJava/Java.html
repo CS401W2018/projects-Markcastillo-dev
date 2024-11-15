@@ -11,6 +11,7 @@
 
     <main>
         <fieldset>
+            <div id = "message"></div>
             <legend>Sign up</legend>
             <form id="myForm" action="processing.html" method="post">
                 <div class="form-row">
@@ -70,28 +71,22 @@
             </form>
         </fieldset>
 
-        <p>What is JavaScript? How did it get its name? Invented 1990 Sun micro systems. JavaScripst is a programming langgauge it is invented to run inside the computer, Microsoft. Java running in the front in the browser.</p> <br>
+        <p>What is AJAX? Is a program that runs within the browser. Not in the right order, (Out of order).
+            </p> <br>
     
-        <p>What are the two ways you can run JavaScript?
-            Runs in the Dom (Document Object Model) Or Node JS
+        <p>Why do you put your JS Code in a separate file?
         </p> <br>
 
-        <p>What was the most popular front-end js library? J Query</p><br>
 
-        <p>What is the most popular front-end js library today?
-            React
-        </p><br>
+    
     </main>
         
     <footer>
         <p>&copy; Mark Castillo 2024</p>
     </footer>
-    <script>
-        document.getElementById("myForm").addEventListener('submit',function(event) {
-            event.preventDefault();
-            const fname =document.getElementById('fname').value;
-            alert("You submmitted the forms")
-        })
-    </script>
+
+    <script src="form.js"></script>
 </body>
 </html>
+
+
