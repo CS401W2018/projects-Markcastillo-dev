@@ -1,40 +1,43 @@
+document.getElementById("myForm").addEventListener("submit", function (event) {
+    event.preventDefault(); 
 
-document.getElementById("myForm").addEventListener('submit',function(event) {
-    event.preventDefault();
-    const fname =document.getElementById('fname').value;
-    const lname =document.getElementById('lname').value;
-    const phone = document.getElementById('phone').value;
-    
-    
-    
+
+    const fname = document.getElementById("fname").value;
+    const lname = document.getElementById("lname").value;
+    const email = document.getElementById("email").value;
+    const pass = document.getElementById("pass").value;
+    const phone = document.getElementById("phone").value;
+
     const formData = {
         fname: fname,
         lname: lname,
-        password: document.getElementById('pass').value,
-        phone: phone
-    }
-    if (!fname || !lname) {
-        alert('First name and Last name required');
-        return;
+        email: email,
+        pass: pass,
+        phone: phone,
     };
-    
-    {
-    const xhr = new XMLHttpRequest();
-    xhr.open("GET", "submit.json", true);
-    xhr.setRequestHeader("Content-Type","application/json;charset=UTF-8");
-    xhr.onreadystatechange = function () {
-        if (xdr.readtState === 4 && xhr.status ===200) {
-            message = JSON.parse(xhr.response);
-            document.getElementById("message").innerHTML = response.message;
-            document.getElementById("myForm").innerHTML = "";
-            alert("You submmitted the forms")
-        }else if (xhr.readyState === 4) {
-            alert("Error Submitting form.");
-        }
-        }
 
+
+    if (!fname || !lname || !email || !pass || !phone) {
+        alert("All fields are required!");
+        return;
+    }
+
+    
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", "submit.json", true); 
+    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            const response = JSON.parse(xhr.responseText);
+            document.getElementById("message").innerHTML = response.message;
+            document.getElementById("myForm").reset(); 
+            alert("You submmitted the forms")
+        } else if (xhr.readyState === 4) {
+            alert("Error submitting form.");
+        }
     };
+
     xhr.send(JSON.stringify(formData));
     console.log(formData);
-    
 });
