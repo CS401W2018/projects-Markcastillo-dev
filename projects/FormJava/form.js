@@ -16,8 +16,6 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
         phone: phone,
     };
 
-
-
     if (!fname || !lname || !email || !pass || !phone) {
         alert("All fields are required!");
         return;
