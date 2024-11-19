@@ -13,7 +13,7 @@
         <fieldset>
             <div id = "message"></div>
             <legend>Sign up</legend>
-            <form id="myForm" action="processing.html" method="post">
+            <form id="myForm" action="processing.html" method="get">
                 <div class="form-row">
                     <label for="fname">First Name:</label>
                     <input id="fname" type="text" name="first" placeholder="First Name" required>
@@ -30,50 +30,19 @@
                     <label for="pass">Password:</label>
                     <input id="pass" type="password" name="pass" required>
                 </div>
-                <div class="form-row">
-                    <label for="dob">Date of Birth:</label>
-                    <input id="dob" type="date" name="dob" required>
-                </div>
+
                 <div class="form-row">
                     <label for="phone">Phone Number:</label>
                     <input id="phone" type="tel" name="phone" placeholder="Phone Number" required>
                 </div>      
-                <div class="form-row">
-                    <label>
-                        <input type="checkbox" name="Remember" checked>
-                        Agree to terms
-                    </label>
-                </div>
-                <div class="form-row">
-                    Grade:
-                    <input type="radio" name="grade" value="Freshman"> Freshman
-                    <input type="radio" name="grade" value="Sophomore"> Sophomore
-                    <input type="radio" name="grade" value="Junior"> Junior
-                    <input type="radio" name="grade" value="Senior"> Senior
-                </div>
-                <div class="form-row">
-                    <label for="state">State:</label>
-                    <select name="state" id="state" required>
-                        <option value="">Select your state</option>
-                        <option value="Hawaii">Hawaii</option>
-                        <option value="California">California</option>
-                        <option value="Utah">Utah</option>
-                        <option value="Colorado">Colorado</option>
-                    </select>
-                </div>
-                <div class="form-row">
-                    <label for="comment">Comments:</label>
-                    <textarea name="comment" id="comment" placeholder="Enter your comments here"></textarea>
-                </div>
+
                 <div class="form-row">
                     <input type="submit" value="Submit">
                 </div>
             </form>
         </fieldset>
 
-
-
-    
+ 
     </main>
         
     <footer>
