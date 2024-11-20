@@ -27,8 +27,6 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
         return;
     }
 
-
-
     const xhr = new XMLHttpRequest();
     xhr.open("GET", "submit.json", true); 
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
