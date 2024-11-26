@@ -5,10 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="form.css">
-    <header><h1>Class Project</h1></header>
+    <header><h1>Contact Information form</h1></header>
+    <nav>
+        <a href="Home.html" class="current">Home</a>
+        <a href="About.html">About</a>
+        <a href="Achievements.html">Achievements</a>
+        <a href="Contactform.html">Contact</a>
+    </nav>
     <main>
         <fieldset>
-            <legend>Sign up</legend>
+            <legend>Fill up the contact information form for further assistance</legend>
             <form action="processing.html" method="post">
                 <div class="form-row">
                     <label for="fname">First Name:</label>
@@ -22,14 +28,7 @@
                     <label for="email">Email:</label>
                     <input id="email" type="email" name="email" placeholder="Email Address" required>
                 </div>
-                <div class="form-row">
-                    <label for="pass">Password:</label>
-                    <input id="pass" type="password" name="pass" required>
-                </div>
-                <div class="form-row">
-                    <label for="dob">Date of Birth:</label>
-                    <input id="dob" type="date" name="dob" required>
-                </div>
+
                 <div class="form-row">
                     <label for="phone">Phone Number:</label>
                     <input id="phone" type="tel" name="phone" placeholder="Phone Number" required>
@@ -40,23 +39,7 @@
                         Agree to terms
                     </label>
                 </div>
-                <div class="form-row">
-                    Grade:
-                    <input type="radio" name="grade" value="Freshman"> Freshman
-                    <input type="radio" name="grade" value="Sophomore"> Sophomore
-                    <input type="radio" name="grade" value="Junior"> Junior
-                    <input type="radio" name="grade" value="Senior"> Senior
-                </div>
-                <div class="form-row">
-                    <label for="state">State:</label>
-                    <select name="state" id="state" required>
-                        <option value="">Select your state</option>
-                        <option value="Hawaii">Hawaii</option>
-                        <option value="California">California</option>
-                        <option value="Utah">Utah</option>
-                        <option value="Colorado">Colorado</option>
-                    </select>
-                </div>
+
                 <div class="form-row">
                     <label for="comment">Comments:</label>
                     <textarea name="comment" id="comment" placeholder="Enter your comments here"></textarea>

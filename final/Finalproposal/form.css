@@ -1,83 +1,122 @@
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;  
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #add8ae;
+    background-color: #1e824c;
     color: white;
-    padding: 1rem;
+    padding: 1rem 0;
     text-align: center;
-    font-size:larger;
+    font-size: 1.5rem;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+nav a.current {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+}
 
 main {
-    background-color: rgb(219, 206, 153);
+    background-color: #dbcea1;
+    margin: 2rem auto;
     padding: 2rem;
-    box-shadow: 0 10px 12px rgb(0, 0, 0);
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    
+    max-width: 900px;
 }
 
 fieldset {
-    border: 1px solid #6b1111;
+    border: 1px solid #4caf50;
     border-radius: 10px;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
 }
 
 legend {
     font-weight: bold;
-    padding: 10px;
-    color: #4CAF50;
+    font-size: 1.2rem;
+    color: #4caf50;
+    padding: 0 10px;
 }
 
 .form-row {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 label {
     width: 150px;
-    display: inline-block;
     font-weight: bold;
+    margin-right: 10px;
 }
 
-input[type="text"],input[type="email"],input[type="password"],input[type="date"],input[type="tel"],
-select, textarea {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
     padding: 10px;
     font-size: 1rem;
-    background-color: #d69784;
-    flex: 1;
-    border: 5px solid #03060d;
-    border-radius: 5px;   
+    background-color: #f5e4da;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
 }
 
-input[type="text"]:focus,input[type="email"]:focus,input[type="password"]:focus,input[type="date"]:focus,input[type="tel"]:focus,select:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
 textarea:focus {
-    background-color: #e0f7e9;
+    background-color: #e9f7ef;
+    border-color: #4caf50;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
-    margin-right: 8px;
-}
-
-.form-row label[for="checkbox"],
-.form-row label[for="radio"] {
-    margin-left: 8px;
+    margin-right: 10px;
 }
 
 input[type="submit"] {
+    display: block;
     width: 100%;
     padding: 15px;
+    font-size: 1rem;
     color: white;
     font-weight: bold;
-    border-radius: 10px;
-    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    cursor: pointer;
 }
 
+input[type="submit"]:hover {
+    background-color: #388e3c;
+}
 
 @media (max-width: 700px) {
     .form-row {
@@ -85,11 +124,9 @@ input[type="submit"] {
     }
 
     label {
-        margin-bottom: 5px;
         width: 100%;
-        display: block;
+        margin-bottom: 5px;
     }
-
 
     input[type="submit"] {
         padding: 20px;
@@ -97,11 +134,25 @@ input[type="submit"] {
     }
 }
 
+nav {
+    flex-direction: column;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    margin: 5px 0;
+    width: 80%;
+    text-align: center;
+}
+
+
 footer {
     width: 100%;
-    background-color: #5f93c4;
+    background-color: #1e824c;
+    color: white;
     text-align: center;
-    padding: 2rem;
-    font-size: medium;
-    color: aqua;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
 }
