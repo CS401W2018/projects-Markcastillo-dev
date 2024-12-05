@@ -1,88 +1,75 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
-
-header{
-    padding: 3px;
-    
 }
 
-figure h3{
-    margin: 5px;
-}
-
-}
-.background{
-    background-color:rgb(114, 172, 230);
+.background {
+    background-color: rgb(114, 172, 230);
     text-align: center;
 }
 
-nav a{
+header {
+    padding: 3px;
+}
+
+nav {
+    background-color: rgb(136, 43, 43);
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+}
+
+nav a {
     text-decoration: none;
     display: block;
     padding: 6px 12px;
     border-radius: 10px;
-    background-color:rgb(85, 201, 201);
+    background-color: rgb(85, 201, 201);
     color: black;
-
 }
 
-nav{
-    background-color:rgb(136, 43, 43);
-    display: flex;
-    padding: 5px;
-    justify-content: space-around;
-    
-}
-
-
-.container{
+.container {
     display: flex;
     justify-content: space-around;
-    grid-template-columns: repeat(2, 1fr);
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; 
+    gap: 10px;
 }
 
-
-.text{
+.text {
     width: 30%;
     margin: 3px;
     padding: 3px;
-
 }
 
-.fixImage{
-    grid-template-columns: repeat(4, 1fr);
+.fixImage {
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
     padding: 10px;
     gap: 10px;
 }
 
-
-
-figure figcaption{
-    font-size: small;
-}
-
-
-.photo{
-   border: black solid thin;
-   background-color: azure;
-}
-
-
-figure{
+figure {
     padding: 2px;
     margin: 2px;
 }
-footer a{
-    display: block;
+
+figure h3 {
+    margin: 5px;
 }
-footer{
+
+figure figcaption {
+    font-size: small;
+}
+
+.photo {
+    border: black solid thin;
+    background-color: azure;
+}
+
+footer {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 1fr);
 }
-
 
 footer a {
     text-decoration: none;
