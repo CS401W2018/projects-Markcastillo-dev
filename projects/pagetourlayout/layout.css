@@ -1,146 +1,129 @@
-body{
-    background-color: rgb(255, 203, 170);
-    font-family: Arial, sans-serif;
+
+body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-}
-header{
-    background-color: rgb(83, 171, 171);
-    color: white;
-    padding: 20px 0;
-    color: lightskyblue;
-    text-shadow: purple 2px 2px 2px;
-    background: url('Flowers.jpg') no-repeat center;
-    background-origin:padding-box;
-    background-clip: inherit;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
-header h1{
-    margin-bottom: 0;
-    border-radius: 30px; 
-    border-style:double;
-    padding: 10px;
-    background-color: rgb(97, 176, 143);
-    color: white;
-    width: 80%;
+
+.container {
+    width: 900px;
     margin: 0 auto;
-    text-align: center;
-    text-shadow: purple 2px 2px 2px;
-    font-size: 35px;
-    letter-spacing: 2px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
-}
-
-#pic1{
-    float: right;
-    width: 400px;
-    margin: 10px;
-    border: 3px solid black;
-    position:relative;
-    
-}
-nav{
-    background-color: rgb(255, 255, 170);
-    text-align: center;
-    padding: 5px 0;
-    height: 70px;
-    border-bottom: #333 solid 5px;
-    border-top: #333 solid 5px;
-}
-nav a{
-    display: inline-block;
-    padding: 10px 5px;
-    background-color: rgb(46, 84, 8);
-    border-bottom: px solid darkslategray;
-    color: white;
-    margin-left: 30px;
-    width: 140px;
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-decoration: none;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    font-size: larger;
-    border-style: outset;
+    overflow: hidden;
 }
-nav a:hover{
-    background-image: url('Flowers.jpg');
-}
-.wrapper{
-    width: 90%;
-    margin: 0 auto;
-    background-color: white;
-}
-main{
+
+header {
+    background: url('header-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
     padding: 20px;
-    margin: 10px;
-    background-color: rgb(176, 219, 200);
-    border: 3px solid rgb(174, 172, 174);
-    border-radius: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
-main h2{
-    text-transform: uppercase;
-    text-shadow: lightpink 2px 2px 2px;
-    line-height: 100 px;
+
+header h1 {
+    font-family: "Georgia", serif;
+    font-size: 2;
 }
-figure{
-    border: thin solid #732c2c;
-    width: 400px;
-    margin: auto;
+
+nav {
+    background-color: #333;
     padding: 10px;
     text-align: center;
 }
-figcaption{
-    font-style: italic;
-    color: #d10000;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: larger;
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
-.pic2{
-    width: 400px;
-    margin: 10px;
-    border: 3px solid black;
-    float: left;
-    position:relative;
-    
-  
-}
-.pic2 img{
-    width: 400px;
-    height: 350px;
-}
-
-#pic1 img{
-    width: 390px;
-}
-
-.clear{
-    clear: both;
-}
-
-nav ul{
-    list-style-type: none;
-    text-align: center;
-}
-nav li{
-    float: left;
+nav ul li {
     display: inline;
+    margin: 15px;
 }
 
-footer{
-    background: url('Flowers.jpg') no-repeat center;
+nav ul li a {
     color: white;
-    padding: 10px 0;
-    text-align: center;
-    font-size: larger;
-    color: rgb(218, 197, 183);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-shadow: black 2px 2px 2px;
-    clear: both;
-    position: relative;
-    bottom: 0;
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 1;
+    color: #444;
+    text-transform: capitalize;
+}
+
+main p {
+    margin: 20px;
+    text-align: justify;
+    font-style: italic;
+}
+
+figure {
+    float: left;
+    margin: 10px 20px 10px 0;
+    width: 40%;
+}
+
+figure img {
     width: 100%;
-    margin-top: 10px;
-    border-top: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+figure figcaption {
+    font-size: 0.9em;
+    text-align: center;
+    color: #555;
+}
+
+footer {
+    background: url('footer-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 1;
+    background-origin: content-box;
+    background-clip: padding-box;
+}
+
+header, main, footer {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #fafafa;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    figure {
+        float: none;
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
 }
