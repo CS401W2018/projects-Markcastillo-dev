@@ -1,49 +1,94 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header {
-    background-color: lightblue;
+    background-color: rgb(78, 109, 143);
+    color: white;
     text-align: center;
-    margin-top: 50px;
-    margin-right:auto;
-    margin-left:auto;
-    border: 5px solid rgb(171, 117, 117);   
-    margin-bottom: 50px;
+    padding: 10px;
 }
 
-#wrapper {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 15px;
+.navigation {
+    background-color: rgb(145, 121, 121);
+    padding: 5px;
 }
 
-figure {
-    border: thin solid black;
-    /* width: 200px; */
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
 }
 
-img {
-    margin: 0px;
-    padding: 0px;
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+    background-color: rgb(207, 219, 219);
+
 }
 
-body{
-background-image: url(Flowers.jpg); 
-background-repeat: repeat;
-border: 30px solid rgb(173, 115, 115);
+nav a:hover {
+    background-color: lightgray;
 }
 
-#lovephoto{
-    margin: 0px;
-    padding: 0px;
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 20px;
 }
 
-Nav a {
-    color: green;
-    border: 3px solid rgb(187, 106, 1);
-    background-color: rgb(255, 219, 127);
+.Fixed {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
 }
-.current {
+
+.Set {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+.sidebar {
+    width: 25%;
+    padding: 15px;
+    background-color: #f4f4f4;
+}
+
+figure h3 {
+    margin: 8px 0;
+}
+
+figure figcaption {
+    font-size: medium;
     color: gray;
 }
 
-.set{
-    border: black solid thin;
+footer {
+    background-color: rgb(51, 68, 85);
+    color: white;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(70, 90, 110);
+    padding: 8px;
+    display: block;
+}
+
+
+footer p {
+    grid-column: span 5;
+    margin-top: 20px;
+    text-align: center;
 }
