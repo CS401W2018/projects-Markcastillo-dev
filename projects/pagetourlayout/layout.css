@@ -5,14 +5,14 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
-    color: #333;
+    color: #302d2d;
 }
 
 
 .container {
     width: 900px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #f7f7f7;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
@@ -24,7 +24,7 @@ header {
     color: white;
     text-align: center;
     padding: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
 }
 
 header h1 {
@@ -51,7 +51,7 @@ nav ul li {
 
 nav ul li a {
     color: white;
-    font-size: 1em;
+    font-size: 1px;
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -85,7 +85,7 @@ figure {
 figure img {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
 }
 
 figure figcaption {
@@ -95,14 +95,15 @@ figure figcaption {
 }
 
 footer {
+    font-size: 1;
+    background-origin: content-box;
+    background-clip: padding-box;
     background: url('footer-bg.jpg') no-repeat center center;
     background-size: cover;
     padding: 10px;
     text-align: center;
     color: white;
-    font-size: 1;
-    background-origin: content-box;
-    background-clip: padding-box;
+
 }
 
 header, main, footer {
@@ -112,7 +113,7 @@ header, main, footer {
     border-radius: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700) {
     .container {
         width: 100%;
     }
